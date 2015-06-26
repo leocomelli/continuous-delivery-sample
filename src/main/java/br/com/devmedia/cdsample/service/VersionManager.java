@@ -1,4 +1,4 @@
-package br.com.devmedia.cdsample;
+package br.com.devmedia.cdsample.service;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;

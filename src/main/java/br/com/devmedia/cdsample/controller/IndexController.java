@@ -1,4 +1,4 @@
-package br.com.devmedia.cdsample;
+package br.com.devmedia.cdsample.controller;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import br.com.devmedia.cdsample.service.VersionManager;
 
 @Controller
 public class IndexController {
