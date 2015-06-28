@@ -21,13 +21,9 @@
 	</properties>
 
 	<scm>
-		<!-- connection>scm:git:https://github.com/leocomelli/continuous-delivery-sample.git</connection>
+		<connection>scm:git:https://github.com/leocomelli/continuous-delivery-sample.git</connection>
 		<url>https://github.com/leocomelli/continuous-delivery-sample</url>
-		<developerConnection>scm:git:https://github.com/leocomelli/continuous-delivery-sample.git</developerConnection-->
-		<connection>scm:git:git@github.com:leocomelli/continuous-delivery-sample.git</connection>
-		<url>https://github.com/leocomelli/continuous-delivery-sample</url>
-		<developerConnection>scm:git:git@github.com:leocomelli/continuous-delivery-sample.git</developerConnection>
-		
+		<developerConnection>scm:git:https://github.com/leocomelli/continuous-delivery-sample.git</developerConnection>
   </scm>
 
 
