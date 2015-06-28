@@ -16,15 +16,15 @@
 		<targetVersion>1.8</targetVersion>
 
 		<spring.version>4.1.6.RELEASE</spring.version>
-		<testng.version>6.9.4</testng.version>
 		<javax.servlet.version>3.0.1</javax.servlet.version>
+		<testng.version>6.9.4</testng.version>
+		<selenium.version>2.39.0</selenium.version>
 	</properties>
 
 	<scm>
 		<connection>scm:git:https://github.com/leocomelli/continuous-delivery-sample.git</connection>
 		<url>https://github.com/leocomelli/continuous-delivery-sample</url>
 		<developerConnection>scm:git:https://github.com/leocomelli/continuous-delivery-sample.git</developerConnection>
-		<tag>HEAD</tag>
 	</scm>
 
 
@@ -75,11 +75,12 @@
 							</includes>
 							<excludes>
 								<exclude>**/*IntegTest.java</exclude>
+								<exclude>**/*AccepTest.java</exclude>
 							</excludes>
 						</configuration>
 					</execution>
 					<execution>
-						<id>integration-tests</id>
+						<id>acceptance-tests</id>
 						<phase>integration-test</phase>
 						<goals>
 							<goal>test</goal>
@@ -87,10 +88,10 @@
 						<configuration>
 							<skip>${skip.executeIT}</skip>
 							<includes>
-								<include>**/*IntegTest.java</include>
-							</includes>
+								<include>**/*AccepTest.java</include>
+							</includes>						
 						</configuration>
-					</execution>
+					</execution>					
 				</executions>
 			</plugin>
 
@@ -131,6 +132,12 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>${testng.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium.version}</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>

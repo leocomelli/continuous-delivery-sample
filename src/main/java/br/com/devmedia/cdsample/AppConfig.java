@@ -10,23 +10,23 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.JstlView;
 import org.springframework.web.servlet.view.UrlBasedViewResolver;
 
-@EnableWebMvc  
+@EnableWebMvc
 @Configuration
 @ComponentScan("br.com.devmedia.cdsample")
 @PropertySource("classpath:version.properties")
-public class AppConfig extends WebMvcConfigurerAdapter {  
-      
-    @Bean  
-    public UrlBasedViewResolver setupViewResolver() {  
-        UrlBasedViewResolver resolver = new UrlBasedViewResolver();  
-        resolver.setPrefix("/WEB-INF/jsp/");  
-        resolver.setSuffix(".jsp");  
-        resolver.setViewClass(JstlView.class);  
-        return resolver;  
-    }  
-    
+public class AppConfig extends WebMvcConfigurerAdapter {
+
     @Bean
-	public static PropertySourcesPlaceholderConfigurer propertyConfigInDev() {
-		return new PropertySourcesPlaceholderConfigurer();
-	}
-} 
+    public UrlBasedViewResolver setupViewResolver() {
+        UrlBasedViewResolver resolver = new UrlBasedViewResolver();
+        resolver.setPrefix("/WEB-INF/jsp/");
+        resolver.setSuffix(".jsp");
+        resolver.setViewClass(JstlView.class);
+        return resolver;
+    }
+
+    @Bean
+    public static PropertySourcesPlaceholderConfigurer propertyConfigInDev() {
+        return new PropertySourcesPlaceholderConfigurer();
+    }
+}
