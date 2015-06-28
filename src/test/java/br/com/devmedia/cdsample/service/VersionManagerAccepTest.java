@@ -13,7 +13,7 @@ public class VersionManagerAccepTest {
 
     public void shouldShowTheAppVersion() {
         WebDriver driver = new HtmlUnitDriver();
-        driver.get("http://192.168.2.5:8080/");
+        driver.get("http://192.168.2.5:8180/");
 
         WebElement element = driver.findElement(id("appversion"));
         assertFalse(element.getText().isEmpty());
