@@ -28,7 +28,7 @@
 
 
 	<build>
-		<finalName>cds.war</finalName>
+		<finalName>cds</finalName>
 		<resources>
 			<resource>
 				<directory>${basedir}/src/main/resources</directory>
