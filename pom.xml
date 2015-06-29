@@ -28,6 +28,7 @@
 
 
 	<build>
+		<finalName>cds.war</finalName>
 		<resources>
 			<resource>
 				<directory>${basedir}/src/main/resources</directory>
@@ -92,18 +93,6 @@
 						</configuration>
 					</execution>					
 				</executions>
-			</plugin>
-
-			<plugin>
-				<groupId>org.eclipse.jetty</groupId>
-				<artifactId>jetty-maven-plugin</artifactId>
-				<version>9.3.0.M2</version>
-				<configuration>
-					<scanIntervalSeconds>10</scanIntervalSeconds>
-					<webApp>
-						<contextPath>/</contextPath>
-					</webApp>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>
