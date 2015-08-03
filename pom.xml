@@ -3,7 +3,7 @@
 
 	<groupId>br.com.devmedia</groupId>
 	<artifactId>continuous-delivery-sample</artifactId>
-	<version>1.2-SNAPSHOT</version>
+	<version>1.2</version>
 	<packaging>war</packaging>
 
 	<name>Continuous Delivery Sample</name>
@@ -24,6 +24,7 @@
 		<connection>scm:git:https://github.com/leocomelli/continuous-delivery-sample.git</connection>
 		<url>https://github.com/leocomelli/continuous-delivery-sample</url>
 		<developerConnection>scm:git:https://github.com/leocomelli/continuous-delivery-sample.git</developerConnection>
+    <tag>continuous-delivery-sample-1.2</tag>
   </scm>
 
 
